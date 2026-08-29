@@ -1,2 +1,316 @@
-# adamusety.github.io
-ADAMU HASSAN PADDY RICE ENTERPRISE - Quality Paddy Rice Trading and Farming
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adamu Hassan Paddy Rice Enterprise - Quality paddy rice trading, aggregation, storage and farming support in Nigeria.">
+  <title>Adamu Hassan Paddy Rice Enterprise</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #18301f;
+      background: #f7faf5;
+    }
+    header {
+      background: #14532d;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,.12);
+    }
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+    }
+    .logo { font-size: 19px; font-weight: 800; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    nav a:hover { text-decoration: underline; }
+    .hero {
+      background: linear-gradient(135deg, #14532d, #2f7d32);
+      color: white;
+      padding: 85px 20px 75px;
+    }
+    .hero-inner { max-width: 1100px; margin: auto; }
+    .hero h1 { font-size: clamp(34px, 7vw, 62px); line-height: 1.08; max-width: 800px; }
+    .hero p { margin: 20px 0 28px; max-width: 700px; font-size: 18px; color: #eaf7e9; }
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+    .btn-light { background: white; color: #14532d; }
+    .btn-outline { border: 2px solid white; color: white; }
+    section { padding: 65px 20px; }
+    .container { max-width: 1100px; margin: auto; }
+    .section-title { text-align: center; margin-bottom: 35px; }
+    .section-title h2 { font-size: 32px; color: #14532d; margin-bottom: 8px; }
+    .section-title p { color: #58705e; }
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: center;
+    }
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px rgba(20,83,45,.08);
+    }
+    .card h3 { color: #14532d; margin-bottom: 10px; }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .service {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      border-top: 4px solid #2f7d32;
+      box-shadow: 0 5px 20px rgba(20,83,45,.07);
+    }
+    .service .icon { font-size: 35px; margin-bottom: 10px; }
+    .service h3 { color: #14532d; margin-bottom: 8px; }
+    .stats {
+      background: #eaf4e8;
+    }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+    .stat strong { display: block; font-size: 34px; color: #14532d; }
+    .stat span { color: #58705e; }
+    .cta {
+      background: #14532d;
+      color: white;
+      text-align: center;
+    }
+    .cta h2 { font-size: 34px; margin-bottom: 12px; }
+    .cta p { max-width: 700px; margin: 0 auto 22px; color: #eaf7e9; }
+    .contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+    .contact-box {
+      background: white;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px rgba(20,83,45,.08);
+    }
+    .contact-box h3 { color: #14532d; margin-bottom: 12px; }
+    footer {
+      background: #0b2e19;
+      color: #cfe2d2;
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 14px;
+    }
+    @media (max-width: 800px) {
+      .nav { flex-direction: column; align-items: flex-start; }
+      nav { width: 100%; display: flex; flex-wrap: wrap; gap: 10px; }
+      nav a { margin-left: 0; margin-right: 12px; }
+      .about, .contact { grid-template-columns: 1fr; }
+      .services, .stat-grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">ADAMU HASSAN PADDY RICE ENTERPRISE</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <h1>Quality Paddy Rice Trading and Farming</h1>
+      <p>
+        We buy, aggregate, store and supply paddy rice while working with local farmers
+        and customers to build a stronger and more reliable rice value chain.
+      </p>
+      <a class="btn btn-light" href="#contact">Get in Touch</a>
+      <a class="btn btn-outline" href="#services">Our Services</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Our Business</h2>
+        <p>Building value in the paddy rice supply chain.</p>
+      </div>
+      <div class="about">
+        <div>
+          <p>
+            Adamu Hassan Paddy Rice Enterprise is a CAC-registered business operating
+            in the paddy rice value chain. Our work focuses on connecting local farmers
+            with customers through paddy rice purchasing, aggregation, storage and supply.
+          </p>
+          <br>
+          <p>
+            Our expansion focus is to increase aggregation, improve storage and
+            transportation, reduce post-harvest losses and reach more customers.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Our Mission</h3>
+          <p>
+            To provide reliable access to quality paddy rice while creating better
+            market opportunities for farmers and dependable supply for customers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" style="background:#eef6ed;">
+    <div class="container">
+      <div class="section-title">
+        <h2>What We Do</h2>
+        <p>Reliable services across the paddy rice value chain.</p>
+      </div>
+      <div class="services">
+        <div class="service">
+          <div class="icon">🌾</div>
+          <h3>Paddy Rice Aggregation</h3>
+          <p>We source and aggregate paddy rice from local farmers to meet customer demand.</p>
+        </div>
+        <div class="service">
+          <div class="icon">🏪</div>
+          <h3>Storage</h3>
+          <p>We focus on better storage practices to protect quality and reduce post-harvest losses.</p>
+        </div>
+        <div class="service">
+          <div class="icon">🚚</div>
+          <h3>Supply & Transportation</h3>
+          <p>We coordinate movement and supply of paddy rice to customers and markets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Business Strength</h2>
+        <p>Focused on sustainable growth and stronger market connections.</p>
+      </div>
+      <div class="stat-grid">
+        <div class="stat">
+          <strong>5+</strong>
+          <span>Years in the paddy rice value chain</span>
+        </div>
+        <div class="stat">
+          <strong>Farmers</strong>
+          <span>Working with local farming communities</span>
+        </div>
+        <div class="stat">
+          <strong>Quality</strong>
+          <span>Focused on dependable paddy rice supply</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Choose Us?</h2>
+        <p>We are committed to practical value and dependable relationships.</p>
+      </div>
+      <div class="services">
+        <div class="card">
+          <h3>Farmer Connections</h3>
+          <p>We work directly with local farmers to support aggregation and market access.</p>
+        </div>
+        <div class="card">
+          <h3>Reliable Supply</h3>
+          <p>Our goal is to improve storage, transportation and availability for customers.</p>
+        </div>
+        <div class="card">
+          <h3>Growth Focus</h3>
+          <p>We are expanding our capacity to serve more farmers, markets and customers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Let's Build a Stronger Rice Value Chain</h2>
+      <p>
+        For business enquiries, paddy rice supply opportunities or partnership discussions,
+        please get in touch with Adamu Hassan Paddy Rice Enterprise.
+      </p>
+      <a class="btn btn-light" href="#contact">Contact Us</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>We welcome business enquiries and partnership opportunities.</p>
+      </div>
+      <div class="contact">
+        <div class="contact-box">
+          <h3>Adamu Hassan Paddy Rice Enterprise</h3>
+          <p><strong>Business:</strong> Paddy rice trading, aggregation, storage and supply</p>
+          <p><strong>Location:</strong> Nigeria</p>
+          <p style="margin-top:15px;">
+            Add your phone number, WhatsApp number and email address here when you are ready.
+          </p>
+        </div>
+        <div class="contact-box">
+          <h3>Business Enquiries</h3>
+          <p>
+            Farmers, buyers, processors and potential partners can contact the business
+            for supply and collaboration opportunities.
+          </p>
+          <p style="margin-top:15px;">
+            <strong>Website:</strong> adamusety.github.io
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Adamu Hassan Paddy Rice Enterprise. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
